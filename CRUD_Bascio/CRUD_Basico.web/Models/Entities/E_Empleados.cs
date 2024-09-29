@@ -11,6 +11,6 @@ namespace CRUD_Basico.web.Models.Entities
         public string Direccion { get; set; }
         public string Posicion { get; set; }
         public decimal Sueldo { get; set; }
-        public bool Active { get; set; }
+        public bool Activo { get; set; }
     }
 }

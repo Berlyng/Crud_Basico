@@ -134,3 +134,4 @@ C:\Proyecto c#\Github-project\Crud_Basico\CRUD_Bascio\CRUD_Basico.web\obj\Debug\
 C:\Proyecto c#\Github-project\Crud_Basico\CRUD_Bascio\CRUD_Basico.web\obj\Debug\net8.0\CRUD_Basico.web.pdb
 C:\Proyecto c#\Github-project\Crud_Basico\CRUD_Bascio\CRUD_Basico.web\obj\Debug\net8.0\CRUD_Basico.web.genruntimeconfig.cache
 C:\Proyecto c#\Github-project\Crud_Basico\CRUD_Bascio\CRUD_Basico.web\obj\Debug\net8.0\ref\CRUD_Basico.web.dll
+C:\Proyecto c#\Github-project\Crud_Basico\CRUD_Bascio\CRUD_Basico.web\obj\Debug\net8.0\CRUD_Basico.web.sourcelink.json

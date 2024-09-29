@@ -7,10 +7,12 @@ namespace CRUD_Basico.web.Data
 {
     public class EmpleadoContex : DbContext
     {
-        public EmpleadoContex(DbContextOptions<EmpleadoContex> options):base(options) 
-        { 
-        
+        public  DbSet<E_Empleados> Empleados { get; set; }
+        public EmpleadoContex(DbContextOptions<EmpleadoContex> options) : base(options)
+        {
+            
         }
+        
         
     }
 }

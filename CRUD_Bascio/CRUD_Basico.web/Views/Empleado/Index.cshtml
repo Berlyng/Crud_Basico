@@ -1,8 +1,36 @@
-﻿@{
-    ViewData["Title"] = "Empleado";
+﻿@using CRUD_Basico.web.Models.Entities
+@model List<E_Empleados>
+@{
+	ViewData["Title"] = "Empleado";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	<h2 class="display-6">Lista de empleados</h2>
+
+	<table class="table">
+  <thead class="table-dark">
+			<th scope="col">Id</th>
+			<th scope="col">Nombre</th>
+			<th scope="col">Edad</th>
+			<th scope="col">Direccion</th>
+			<th scope="col">Posicion</th>
+			<th scope="col">Sueldo</th>
+			<th scope="col">Activo</th>
+  </thead>
+
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<th scope="col">@item.Id</th>
+				<th scope="col">@item.Nombre</th>
+				<th scope="col">@item.Edad</th>
+				<th scope="col">@item.Direccion</th>
+				<th scope="col">@item.Posicion</th>
+				<th scope="col">@item.Sueldo</th>
+				<th scope="col">@item.Activo</th>
+			}
+
+		</tbody>
+
+	</table>
 </div>
