@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Proyecto c#\Github-project\Crud_Basico\CRUD_Bascio\CRUD_Basico.web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Proyecto c\#/Github-project/Crud_Basico/CRUD_Bascio/CRUD_Basico.web/Views/Empleado/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Proyecto c\#/Github-project/Crud_Basico/CRUD_Bascio/CRUD_Basico.web/Views/Empleado/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

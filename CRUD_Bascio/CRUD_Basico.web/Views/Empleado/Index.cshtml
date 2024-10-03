@@ -29,6 +29,24 @@
 					<th scope="col">@item.Posicion</th>
 					<th scope="col">@item.Sueldo</th>
 					<th scope="col">@(item.Activo ? "Si" : "No")</th>
+					<th>
+						<a asp-controller="Empleado" 
+						asp-action="Editar" 
+						asp-route-id ="@item.Id"
+						class="btn btn-primary mb-3">
+						Editar</a>
+					</th>
+
+				<th>
+					<a asp-controller="Empleado"
+					   asp-action="Eliminar"
+					   asp-route-id="@item.Id"
+					   onclick ="return Confirmar()"
+					   class="btn btn-danger mb-3">
+						Eliminar
+					</a>
+
+				</th>
 
 				</tbody>
 
@@ -36,4 +54,12 @@
 		</table>
 	</div>
 </div>
+
+@section Scripts{
+	<script>
+		function Confirmar() {
+			return confirm("Esta seguro que desea elimimar?")
+		}
+	</script>
+}
 

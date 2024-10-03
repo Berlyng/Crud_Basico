@@ -26,6 +26,41 @@ namespace CRUD_Basico.web.Controllers
 		}
 
 
+		[HttpPost]
+		public async Task<IActionResult> Nuevo(E_Empleados empleado)
+		{
+            await _contex.Empleados.AddAsync(empleado);
+            await _contex.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
+		}
+
+		[HttpGet]
+		public async Task<IActionResult>Editar(int id)
+		{
+            E_Empleados empleado = await _contex.Empleados.FirstAsync(e => e.Id == id);
+
+			return View(empleado);
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Editar(E_Empleados empleado)
+		{
+			 _contex.Empleados.Update(empleado);
+			await _contex.SaveChangesAsync();
+			return RedirectToAction(nameof(Index));
+		}
+
+		[HttpGet]
+		public async Task<IActionResult> Eliminar(int id)
+		{
+			E_Empleados empleado = await _contex.Empleados.FirstAsync(e => e.Id == id);
+			_contex.Empleados.Remove(empleado);
+			await _contex.SaveChangesAsync();
+
+			return RedirectToAction(nameof(Index));
+		}
+
 
 	}
 }
